@@ -1,0 +1,17 @@
+.partition {
+    background-color: darkred;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+    min-width: 35px;
+    max-width: 35px;
+    min-height: 100px;
+    cursor: grab;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.18);
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+}
+.partition .partition-size {}
