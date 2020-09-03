@@ -30,7 +30,18 @@ function App() {
               if(modList[i].type === TYPE_PARTITION_ITEM) {
                   currentPartitionSize = modList[i].size;
               } else if (modList[i].type === TYPE_STORY_ITEM) {
+                  // re-estimate story points
                   modList[i].storyPoints = currentPartitionSize;
+                  // re-estimate immaturity level
+                  if (modList[i].previousStoryPoints &&
+                      modList[i].previousStoryPoints !== modList[i].storyPoints &&
+                      modList[i].previousPositionIndex &&
+                      modList[i].previousPositionIndex !== i) {
+                      modList[i].immaturityLevel = modList[i].immaturityLevel + 1;
+                  }
+                  // remember current estimation for next re-estimation
+                  modList[i].previousStoryPoints = currentPartitionSize;
+                  modList[i].previousPositionIndex = i;
               }
           }
           setEstimationList(modList);
@@ -59,7 +70,7 @@ function App() {
                            group={'estimation'}
                            className={'estimation-list'}
                            animation={200}>
-                {estimationList.map(item => (item.type === TYPE_STORY_ITEM ? <Story key={item.id} story={item}></Story> : <Partition key={item.id} partition={item}></Partition>))}
+                {estimationList.map(item => (item.type === TYPE_STORY_ITEM ? <Story key={item.id} story={item} /> : <Partition key={item.id} partition={item} />))}
             </ReactSortable>
         </div>
         <div className={'estimation-tool-belt'}>
@@ -78,7 +89,7 @@ function App() {
                                group={'estimation'}
                                className={'backlog-list'}
                                animation={200}>
-                    {backlog.map(item => (<Story key={item.id} story={item}></Story>))}
+                    {backlog.map(item => (<Story key={item.id} story={item} />))}
                 </ReactSortable>
             </div>
             <div className={'backlog-actions-wrapper'}>

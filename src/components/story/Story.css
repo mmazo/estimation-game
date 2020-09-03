@@ -7,7 +7,7 @@
     max-width: 250px;
     min-height: 100px;
     cursor: grab;
-    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.18);
+    box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.18);
     position: relative;
 }
 .story .story-header {
@@ -36,12 +36,12 @@
 }
 
 .story .story-immaturity-level-dot {
-    border-radius: 24px;
-    width: 15px;
+    border-radius: 2px;
+    width: 4px;
     height: 15px;
     background-color: darkred;
     display: inline-block;
-    margin-left: 5px;
+    margin-left: 1px;
 }
 
 .story .story-title {
