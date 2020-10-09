@@ -18,6 +18,7 @@ function App() {
       new PartitionItem(3),
       new PartitionItem(5),
       new PartitionItem(8),
+      new PartitionItem(13),
       new PartitionItem(21)
   ]);
 

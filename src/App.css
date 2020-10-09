@@ -32,7 +32,7 @@
 
 .App .estimation-tool-belt .partitions-wrapper {
     display: inline-block;
-    width: 330px;
+    width: 386px;
     height: 108px;
     overflow: hidden;
 }
@@ -43,7 +43,7 @@
 
 .App .estimation-tool-belt .backlog-wrapper {
     display: inline-block;
-    width: calc(100% - 330px - 304px);
+    width: calc(100% - 386px - 304px);
     height: 108px;
     overflow: hidden;
     overflow-y: auto;
