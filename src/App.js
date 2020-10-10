@@ -26,26 +26,44 @@ function App() {
 
   function reEstimate(modList) {
       if (modList) {
-          let currentPartitionSize = 0;
-          for (let i = 0; i < modList.length; i++) {
-              if(modList[i].type === TYPE_PARTITION_ITEM) {
-                  currentPartitionSize = modList[i].size;
-              } else if (modList[i].type === TYPE_STORY_ITEM) {
-                  // re-estimate story points
-                  modList[i].storyPoints = currentPartitionSize;
-                  // re-estimate immaturity level
-                  if (modList[i].previousStoryPoints &&
-                      modList[i].previousStoryPoints !== modList[i].storyPoints &&
-                      modList[i].previousPositionIndex &&
-                      modList[i].previousPositionIndex !== i) {
-                      modList[i].immaturityLevel = modList[i].immaturityLevel + 1;
-                  }
-                  // remember current estimation for next re-estimation
-                  modList[i].previousStoryPoints = currentPartitionSize;
-                  modList[i].previousPositionIndex = i;
-              }
-          }
+          reEstimateStoryPoints(modList);
+          reEstimateImmaturityLevel(modList);
           setEstimationList(modList);
+      }
+  }
+
+  function reEstimateStoryPoints(modList) {
+      let currentPartitionSize = 0;
+      for (let i = 0; i < modList.length; i++) {
+          if(modList[i].type === TYPE_PARTITION_ITEM) {
+              currentPartitionSize = modList[i].size;
+          } else if (modList[i].type === TYPE_STORY_ITEM) {
+              // re-estimate story points
+              modList[i].storyPoints = currentPartitionSize;
+              // remember current overall position
+              modList[i].index = i;
+          }
+      }
+  }
+
+  function reEstimateImmaturityLevel(modList) {
+      const onlyStoriesList = [...modList].filter(item => item.type !== TYPE_PARTITION_ITEM);
+      for (let i = 0; i < onlyStoriesList.length; i++) {
+          // re-estimate immaturity level
+          if (onlyStoriesList[i].previousStoryPoints &&
+              onlyStoriesList[i].previousStoryPoints !== onlyStoriesList[i].storyPoints &&
+              onlyStoriesList[i].previousPositionIndex &&
+              onlyStoriesList[i].previousPositionIndex !== i) {
+              onlyStoriesList[i].immaturityLevel = onlyStoriesList[i].immaturityLevel + 1;
+          }
+          // remember current estimation for next re-estimation
+          onlyStoriesList[i].previousStoryPoints = onlyStoriesList[i].storyPoints;
+          onlyStoriesList[i].previousPositionIndex = i;
+
+          // save the changes
+          if (modList[onlyStoriesList[i].index]) {
+              modList[onlyStoriesList[i].index] = onlyStoriesList[i];
+          }
       }
   }
 

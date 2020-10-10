@@ -7,6 +7,7 @@ class StoryItem {
         this.storyPoints = 0;
         this.immaturityLevel = 0;
         this.title = title;
+        this.index = undefined;
         this.previousStoryPoints = undefined;
         this.previousPositionIndex = undefined;
     }
