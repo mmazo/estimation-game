@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="estimation-game-logo.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 30 20">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     inkscape:window-maximized="1"
+     inkscape:window-y="-9"
+     inkscape:window-x="-9"
+     inkscape:window-height="1001"
+     inkscape:window-width="1920"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="65.670434"
+     inkscape:cx="183.46755"
+     inkscape:zoom="3.959798"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Ebene 1">
+    <g
+       transform="translate(1.0583333,0.52916667)"
+       id="g880">
+      <g
+         id="g868"
+         transform="translate(-21.386934,-14.705196)">
+        <rect
+           transform="rotate(-19.756526)"
+           ry="1.3904542"
+           rx="1.6040603"
+           y="25.62562"
+           x="13.670274"
+           height="15.033911"
+           width="11.024868"
+           id="rect10"
+           style="fill:#ffdd55;stroke:none;stroke-width:0.3;stroke-linecap:round" />
+        <text
+           transform="matrix(0.79493886,-0.31072325,0.42653832,1.0912344,0,0)"
+           id="text846"
+           y="32.182632"
+           x="17.796896"
+           style="font-size:12.6105px;line-height:3.69447px;font-family:'Cooper Black';-inkscape-font-specification:'Cooper Black, ';letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.264583"
+           xml:space="preserve"><tspan
+             style="fill:#ffffff;stroke-width:0.264583"
+             y="32.182632"
+             x="17.796896"
+             id="tspan844"
+             sodipodi:role="line">1</tspan></text>
+        <rect
+           transform="rotate(2.1000737)"
+           style="fill:#008000;stroke:none;stroke-width:0.3;stroke-linecap:round"
+           id="rect12"
+           width="11.024868"
+           height="15.033911"
+           x="30.872551"
+           y="14.06082"
+           rx="1.6040603"
+           ry="1.3904542" />
+        <text
+           xml:space="preserve"
+           style="font-size:12.6105px;line-height:3.69447px;font-family:'Cooper Black';-inkscape-font-specification:'Cooper Black, ';letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.264583"
+           x="39.642738"
+           y="20.549404"
+           id="text850"
+           transform="matrix(0.85143622,0.05944001,-0.08159493,1.1687898,0,0)"><tspan
+             sodipodi:role="line"
+             id="tspan848"
+             x="39.642738"
+             y="20.549404"
+             style="fill:#ffffff;stroke-width:0.264583">2</tspan></text>
+        <rect
+           transform="rotate(21.911107)"
+           ry="1.3904542"
+           rx="1.6040603"
+           y="0.43075824"
+           x="42.203327"
+           height="15.033911"
+           width="11.024868"
+           id="rect14"
+           style="fill:#ff0000;stroke:none;stroke-width:0.3;stroke-linecap:round" />
+        <text
+           transform="matrix(0.77136769,0.35634458,-0.48250086,1.0735003,0,0)"
+           id="text854"
+           y="7.2141461"
+           x="53.301113"
+           style="font-size:11.6486px;line-height:3.41265px;font-family:'Cooper Black';-inkscape-font-specification:'Cooper Black, ';letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.264583"
+           xml:space="preserve"><tspan
+             style="fill:#ffffff;stroke-width:0.264583"
+             y="7.2141461"
+             x="53.301113"
+             id="tspan852"
+             sodipodi:role="line">3</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

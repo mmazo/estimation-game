@@ -1,18 +1,19 @@
 .story {
-    background-color: bisque;
-    margin: 10px;
+    background-color: #ffffff;
+    margin: 5px;
     box-sizing: border-box;
     display: inline-block;
-    min-width: 250px;
-    max-width: 250px;
-    min-height: 100px;
     cursor: grab;
     box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.18);
     position: relative;
+    color: #000000;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #ffffff;
 }
 .story .story-header {
     display: flex;
-    background-color: burlywood;
+    background-color: #ebb70e;
     padding: 10px;
     box-sizing: border-box;
     height: 35px;
