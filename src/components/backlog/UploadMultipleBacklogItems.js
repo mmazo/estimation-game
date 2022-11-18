@@ -3,18 +3,14 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import StoryItem from "../story/StoryItem";
 
-const TAB_KEY_MULTI_UPLOAD = 'UploadMultipleBacklogItems';
-
-function UploadMultipleBacklogItems({onAdd, activeTab}) {
+function UploadMultipleBacklogItems({onAdd}) {
 
     const [stories, setStories] = useState('');
     const textarea = useRef();
 
     useEffect(() => {
-        if (TAB_KEY_MULTI_UPLOAD === activeTab) {
-            textarea.current.focus();
-        }
-    },[activeTab]);
+        textarea.current.focus();
+    },[]);
 
     function submit(e) {
         e.preventDefault();
@@ -43,4 +39,4 @@ function UploadMultipleBacklogItems({onAdd, activeTab}) {
     </Form>);
 }
 
-export { UploadMultipleBacklogItems as default, TAB_KEY_MULTI_UPLOAD };
+export { UploadMultipleBacklogItems as default };
