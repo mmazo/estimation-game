@@ -17,11 +17,15 @@ function UploadMultipleBacklogItems({onAdd}) {
         const ret = [];
         const lines = stories.split('\n');
         for(let i = 0;i < lines.length;i++) {
-            const bi = lines[i].split(' ');
-            const number = bi[0];
-            bi.splice(0,1);
-            const title = bi.join(' ');
-            ret.push(new StoryItem(number, title));
+            if (lines[i] !== '' && lines[i] !== ' ') {
+                const bi = lines[i].split(' ');
+                const number = bi[0];
+                bi.splice(0,1);
+                const title = bi.join(' ');
+                if (number && title) {
+                    ret.push(new StoryItem(number, title));
+                }
+            }
         }
         onAdd(ret);
     }
