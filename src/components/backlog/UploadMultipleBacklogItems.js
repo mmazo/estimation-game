@@ -22,7 +22,7 @@ function UploadMultipleBacklogItems({onAdd}) {
                 const number = bi[0];
                 bi.splice(0,1);
                 const title = bi.join(' ');
-                if (number && title) {
+                if (number && title && ret.filter(item => item.id === number).length === 0) {
                     ret.push(new StoryItem(number, title));
                 }
             }

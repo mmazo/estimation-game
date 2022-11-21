@@ -67,8 +67,14 @@ function App() {
       }
   }
 
-  function addItemsToBacklog(items) {
-      setBacklog(backlog.concat(items));
+  function addItemsToBacklog(items, backlogItems, estimationItems) {
+      let onlyNewItems = items.filter(item => {
+          return backlogItems.filter(backlogItem => backlogItem.id === item.id).length === 0;
+      });
+      onlyNewItems = onlyNewItems.filter(item => {
+          return estimationItems.filter(estimationItem => estimationItem.id === item.id).length === 0;
+      });
+      setBacklog(backlogItems.concat(onlyNewItems));
   }
 
   function downloadEstimatedItems() {
@@ -112,7 +118,7 @@ function App() {
                 </ReactSortable>
             </div>
             <div className={'backlog-actions-wrapper'}>
-                <BacklogUploadDialogue onAdd={addItemsToBacklog}/>
+                <BacklogUploadDialogue onAdd={(items) => addItemsToBacklog(items, backlog, estimationList)}/>
                 <Button disabled={estimationList.length === 0} onClick={downloadEstimatedItems}>Save estimated stories</Button>
             </div>
         </div>
