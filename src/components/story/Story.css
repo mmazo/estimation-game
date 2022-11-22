@@ -6,9 +6,11 @@
     min-width: 250px;
     max-width: 250px;
     min-height: 100px;
+    max-height: 250px;
     cursor: grab;
     box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.18);
     position: relative;
+    border-radius: 0.25rem;
 }
 .story .story-header {
     display: flex;
@@ -16,6 +18,7 @@
     padding: 10px;
     box-sizing: border-box;
     height: 35px;
+    border-radius: 0.25rem 0.25rem 0 0;
 }
 
 .story .story-id {
@@ -47,4 +50,5 @@
 .story .story-title {
     padding: 10px;
     box-sizing: border-box;
+    font-size: 1rem;
 }
