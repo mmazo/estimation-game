@@ -39,7 +39,7 @@ It also allows you to save paper and time, since you do not have to prepare the 
    That`s it :)
    
 ### Live Example
-You can find live example at [http://mmazo.de/estimation-game/](http://mmazo.de/estimation-game/)
+You can find live example at [https://mmazo.github.io/estimation-game/](https://mmazo.github.io/estimation-game/)
 
 ## Available Scripts
 
