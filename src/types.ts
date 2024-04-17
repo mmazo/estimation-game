@@ -3,11 +3,11 @@ export enum CardItemType {
   TYPE_PARTITION_ITEM = "PARTITION_ITEM",
 }
 
-export type CardItem = {
+export interface CardItem {
   id: number | string;
   type: CardItemType;
-};
-export class StoryItem {
+}
+export class StoryItem implements CardItem {
   type: CardItemType;
   id: string;
   storyPoints: number;
@@ -29,7 +29,7 @@ export class StoryItem {
   }
 }
 
-export class PartitionItem {
+export class PartitionItem implements CardItem {
   id: number;
   type: CardItemType;
   size: number;
