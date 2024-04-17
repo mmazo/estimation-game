@@ -27,6 +27,17 @@ jobs:
       - name: Build production code
         run: npm run build
 
-      - name: Deploy demo version to github pages
+      - name: Setup GitHub Pages
         if: github.ref_name == 'master'
-        run: npm run deploy-demo
+        uses: actions/configure-pages@v5
+
+      - name: Upload production code
+        if: github.ref_name == 'master'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './dist'
+
+      - name: Deploy production code to GitHub Pages
+        if: github.ref_name == 'master'
+        id: deployment
+        uses: actions/deploy-pages@v4
