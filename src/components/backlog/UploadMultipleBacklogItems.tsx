@@ -3,7 +3,7 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { StoryItem } from "../../types.ts";
 
-function UploadMultipleBacklogItems({
+export default function UploadMultipleBacklogItems({
   onAdd,
 }: Readonly<{ onAdd: (items: StoryItem[]) => void }>) {
   const [stories, setStories] = useState("");
@@ -57,5 +57,3 @@ function UploadMultipleBacklogItems({
     </Form>
   );
 }
-
-export { UploadMultipleBacklogItems as default };

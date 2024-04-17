@@ -4,7 +4,7 @@ import Modal from "react-bootstrap/Modal";
 import UploadMultipleBacklogItems from "./UploadMultipleBacklogItems";
 import { StoryItem } from "../../types.ts";
 
-function BacklogUploadDialogue({
+export default function BacklogUploadDialogue({
   onAdd,
 }: Readonly<{ onAdd: (items: StoryItem[]) => void }>) {
   const [show, setShow] = useState(false);
@@ -33,5 +33,3 @@ function BacklogUploadDialogue({
     </>
   );
 }
-
-export default BacklogUploadDialogue;

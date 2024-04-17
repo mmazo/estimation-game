@@ -4,9 +4,9 @@ import { StoryItem } from "../../types.ts";
 /**
  * Represents single story
  */
-function Story({ story }: Readonly<{ story: StoryItem }>) {
+export default function Story({ story }: Readonly<{ story: StoryItem }>) {
   const renderMaturityLevelDots = () => {
-    let dots = [];
+    const dots = [];
     for (let i = 0; i < story.immaturityLevel; i++) {
       dots.push(<div key={i} className={"story-immaturity-level-dot"}></div>);
     }
@@ -26,5 +26,3 @@ function Story({ story }: Readonly<{ story: StoryItem }>) {
     </div>
   );
 }
-
-export default Story;

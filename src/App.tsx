@@ -8,7 +8,7 @@ import Button from "react-bootstrap/Button";
 import fileDownload from "js-file-download";
 import { CardItem, CardItemType, PartitionItem, StoryItem } from "./types.ts";
 
-function App() {
+export default function App() {
   const [backlog, setBacklog] = useState<CardItem[]>([]);
 
   const [estimationTools, setEstimationTools] = useState([
@@ -175,5 +175,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
