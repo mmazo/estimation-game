@@ -1,0 +1,32 @@
+name: CI and CD Workflow for Estimation Game
+on: push
+jobs:
+  ci-cd:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get code
+        uses: actions/checkout@v3
+
+      - name: Install NodeJS
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Do code lint check
+        run: npm run lint
+
+      - name: Do code format check
+        run: npm run format-check
+
+      - name: Run tests
+        run: npm run test-coverage
+
+      - name: Build production code
+        run: npm run build
+
+      - name: Deploy demo version to github pages
+        if: github.ref_name == 'master'
+        run: echo "TODO Deploy demo version to github pages"
