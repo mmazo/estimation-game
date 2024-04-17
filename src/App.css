@@ -1,96 +1,96 @@
 .App {
-    font-family: verdana;
-    font-size: 12px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
+  font-family: verdana;
+  font-size: 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 
 .App .estimation-area {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: calc(100% - 108px);
-    width: 100%;
-    overflow: hidden;
-    overflow-y: auto;
-    background-color: #133a0b;
-    box-shadow: inset 0 0 82px #041105;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: calc(100% - 108px);
+  width: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+  background-color: #133a0b;
+  box-shadow: inset 0 0 82px #041105;
 }
 
 .App .estimation-tool-belt {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 108px;
-    width: 100%;
-    overflow: hidden;
-    background-color: #998548;
-    box-shadow: inset 0 0 10px #312607;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 108px;
+  width: 100%;
+  overflow: hidden;
+  background-color: #998548;
+  box-shadow: inset 0 0 10px #312607;
 }
 
 .App .estimation-tool-belt .partitions-wrapper {
-    display: inline-block;
-    width: 386px;
-    height: 108px;
-    overflow: hidden;
+  display: inline-block;
+  width: 386px;
+  height: 108px;
+  overflow: hidden;
 }
 
 .App .estimation-tool-belt .partitions-wrapper .partition {
-    min-height: 87px;
+  min-height: 87px;
 }
 
 .App .estimation-tool-belt .backlog-wrapper {
-    display: inline-block;
-    width: calc(100% - 386px - 304px);
-    height: 108px;
-    overflow: hidden;
-    overflow-y: auto;
-    border-left: 1px solid #796119;
-    border-right: 1px solid #796119;
+  display: inline-block;
+  width: calc(100% - 386px - 304px);
+  height: 108px;
+  overflow: hidden;
+  overflow-y: auto;
+  border-left: 1px solid #796119;
+  border-right: 1px solid #796119;
 }
 
 .App .estimation-tool-belt .backlog-actions-wrapper {
-    display: inline-block;
-    width: 304px;
-    height: 108px;
-    overflow: hidden;
-    box-sizing: border-box;
+  display: inline-block;
+  width: 304px;
+  height: 108px;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .App .estimation-tool-belt .backlog-actions-wrapper > button {
-    display: block;
-    margin: 10px;
-    box-sizing: border-box;
-    width: calc(100% - 10px - 10px);
+  display: block;
+  margin: 10px;
+  box-sizing: border-box;
+  width: calc(100% - 10px - 10px);
 }
 
 .App .backlog-list .story {
-    display: block;
-    min-width: inherit;
-    max-width: inherit;
-    min-height: 87px;
-    max-height: 87px;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  display: block;
+  min-width: inherit;
+  max-width: inherit;
+  min-height: 87px;
+  max-height: 87px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .App .backlog-list .story-points,
 .App .backlog-list .story-immaturity-level {
-    display: none;
+  display: none;
 }
 
 .App .estimation-list {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
 }
 
 .App .estimation-tools {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
