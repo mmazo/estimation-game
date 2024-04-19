@@ -38,7 +38,7 @@ export default function UploadMultipleBacklogItems({
 
   return (
     <Form onSubmit={submit}>
-      <Form.Group controlId="multipleStories">
+      <Form.Group controlId="multipleStories" className={"mb-3"}>
         <Form.Label>Stories</Form.Label>
         <Form.Control
           as="textarea"
