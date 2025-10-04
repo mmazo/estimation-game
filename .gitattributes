@@ -1,0 +1,10 @@
+# Force LF for all text files
+* text=auto eol=lf
+
+# Binary files (do not convert line endings)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.lock binary
