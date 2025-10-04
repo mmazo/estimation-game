@@ -1,8 +1,8 @@
-import { useState } from "react";
-import Button from "react-bootstrap/Button";
-import Modal from "react-bootstrap/Modal";
-import UploadMultipleBacklogItems from "./UploadMultipleBacklogItems";
-import { StoryItem } from "../../types.ts";
+import { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
+import UploadMultipleBacklogItems from './UploadMultipleBacklogItems';
+import { StoryItem } from '../../types.ts';
 
 export default function BacklogUploadDialogue({
   onAdd,
@@ -22,7 +22,7 @@ export default function BacklogUploadDialogue({
       <Button variant="primary" onClick={handleShow}>
         Add stories from backlog
       </Button>
-      <Modal show={show} onHide={handleClose} size={"xl"}>
+      <Modal show={show} onHide={handleClose} size={'xl'}>
         <Modal.Header closeButton>
           <Modal.Title>Add stories for estimation game</Modal.Title>
         </Modal.Header>

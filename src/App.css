@@ -18,7 +18,7 @@
   overflow: hidden;
   overflow-y: auto;
   background-color: #666666;
-  background-image: url("./assets/wood-bg.jpg");
+  background-image: url('./assets/wood-bg.jpg');
 }
 
 .App .estimation-tool-belt {

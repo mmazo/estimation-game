@@ -1,6 +1,6 @@
 export enum CardItemType {
-  TYPE_STORY_ITEM = "STORY_ITEM",
-  TYPE_PARTITION_ITEM = "PARTITION_ITEM",
+  TYPE_STORY_ITEM = 'STORY_ITEM',
+  TYPE_PARTITION_ITEM = 'PARTITION_ITEM',
 }
 
 export interface CardItem {
