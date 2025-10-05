@@ -7,7 +7,7 @@ export default function UploadMultipleBacklogItems({
   onAdd,
 }: Readonly<{ onAdd: (items: StoryItem[]) => void }>) {
   const [stories, setStories] = useState('');
-  const textarea: RefObject<HTMLTextAreaElement> = useRef<HTMLTextAreaElement>(null);
+  const textarea: RefObject<HTMLTextAreaElement | null> = useRef<HTMLTextAreaElement | null>(null);
 
   useEffect(() => {
     textarea.current?.focus();
