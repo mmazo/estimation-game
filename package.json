@@ -2,6 +2,7 @@
   "name": "estimation-game",
   "version": "1.0.0",
   "private": false,
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build --base=/estimation-game/",
